@@ -15,3 +15,5 @@ i dont use any file!
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+### About me
+I'm Myar ALAsiri, Computer scince student(SWE path) at KKU.
