@@ -193,6 +193,7 @@ def EDIT():
     print("this code created by MYAR")
 def UDACITY():
     print("myar love udacity")
+    print("Myar will get pass for this project")
 
 
 
