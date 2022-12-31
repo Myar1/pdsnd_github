@@ -191,6 +191,10 @@ def data(df):
             return
 def EDIT():
     print("this code created by MYAR")
+def UDACITY():
+    print("myar love udacity")
+
+
 
 def main():
     while True:
