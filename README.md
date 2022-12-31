@@ -4,7 +4,7 @@
 29 dec 2022 - thursday
 
 ### Project Title
-bikeshare project-Myar-udacity
+bikeshare project--udacity
 
 ### Description
 program for bikeshare ind information for many cities and times
@@ -16,4 +16,4 @@ i dont use any file!
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
 ### About me
-I'm ---, Computer scince student(SWE path) at KKU.
+
