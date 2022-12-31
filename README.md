@@ -7,7 +7,7 @@
 bikeshare project-Myar
 
 ### Description
-Describe what your project is about and what it does
+program for bikeshare ind information for many cities and times
 
 ### Files used
 Include the files used
