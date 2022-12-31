@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+   # this code created by MYAR.
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -29,7 +29,7 @@ def get_filters():
         break
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    
+
     while True:
       month=input("choose month you would  like to filter by? January, February, March, April, May, June or 'all' \n\n ").lower()
       if month not in MONTH_DATA:
@@ -53,8 +53,8 @@ def get_filters():
 
 
 def load_data(city, month, day):
-    
-    
+
+
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -69,29 +69,29 @@ def load_data(city, month, day):
     df=pd.read_csv(CITY_DATA[city])
      #convert the Start Time column to datetime
     df['Start Time']=pd.to_datetime(df['Start Time'])
-    
+
     df['month']=df['Start Time'].dt.month
     df['day in week']=df['Start Time'].dt.weekday_name
-    
+
     if month !='all':
         months=['january', 'february', 'march', 'april', 'may', 'june']
         month=months.index(month)+1
         df = df[df ['month']==month]
-        
+
     if day !='all':
-        df = df [df ['day in week']==day.title()]  
-           
-             
+        df = df [df ['day in week']==day.title()]
+
+
     return df
 
 
 def time_stats(df):
-   
+
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month 
+    # TO DO: display the most common month
     popular_month = df['month'].mode()[0]
     print('The Most Common Month is: /n', popular_month)
     # TO DO: display the most common day of week
@@ -137,7 +137,7 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    
+
     print('Total travel time:',(df['Trip Duration'].sum()))
 
     # TO DO: display mean travel time
@@ -174,7 +174,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-   
+
 def data(df):
     raw_data = 0
     while True:
@@ -189,13 +189,20 @@ def data(df):
                 break
         elif answer.lower() == 'no':
             return
+def EDIT():
+    print("this code created by MYAR")
+def UDACITY():
+    print("myar love udacity")
+    print("Myar will get pass for this project")
+
+
 
 def main():
     while True:
-        
+
         city, month, day =get_filters()
         df=load_data(city, month, day)
-        
+
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
@@ -208,4 +215,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
